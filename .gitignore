@@ -1,0 +1,15 @@
+# pycharm stuff
+.idea/
+
+# mac stuff
+.DS_Store
+
+# folders
+#data/
+
+# distribution / packaging
+*.egg
+*.egg-info/
+
+# Byte-compiled / optimized
+__pycache__/
