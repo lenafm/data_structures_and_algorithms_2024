@@ -13,3 +13,6 @@
 
 # Byte-compiled / optimized
 __pycache__/
+
+# jupyter stuff
+.ipynb_checkpoints/
