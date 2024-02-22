@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<body>
+<div class="myDiv">
+{% if name %}
+    <h1>{{ name }}</h1>
+{% else %}
+    <h1>About Me</h1>
+{% endif %}
+    I'm super cool.
+</div>
+</body>
+<head>
+    <title>Home</title>
+    <meta name="description" content="My home page, on which I showcase my work!">
+    <meta name="keywords" content="personal home page">
+<style>
+.myDiv {
+  border: solid darkblue 5px;
+  padding-bottom: 20px;
+  background-color: lightblue;
+  text-align: center;
+  font-family: Sans-serif;
+}
+</style>
+</head>
+</html>

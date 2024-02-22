@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="profile-container">
+        <img src="{{ url_for('static', filename='Elena_funny.JPG') }}" alt="A photo of you">
+        <div class="profile-info">
+            <h1>Elena Dreyer</h1>
+            <h2>A Brief Description of You</h2>
+            <p>A paragraph about you...</p>
+        </div>
+    </div>
+    <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
+{% endblock %}
+
+
