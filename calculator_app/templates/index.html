@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Flask Calculator</title>
+</head>
+
+<body>
+	<h1>Calculator</h1>
+
+    <form action="{{ url_for('calculate')}}" method="post">
+        <input type="text" name="value1" placeholder="Enter the first number" required="required" />
+        <input type="text" name="value2" placeholder="Enter the second number" required="required" />
+        <input type="text" name="operation" placeholder="addition" required="required" />
+        <button type="submit">Calculate</button>
+    </form>
+
+   <br>
+
+   {{ printed_result }}
+
+</body>
+</html>

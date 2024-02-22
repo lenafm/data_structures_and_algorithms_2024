@@ -1,39 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 
 body {
-    font-family: Arial, sans-serif; /* Fallback Font */
+    font-family: Inconsolata, sans-serif; /* Use Inconsolata as the main font */
     margin: 0;
     padding: 0;
     text-align: left;
+    background: #f0f0f0; /* Assuming you want a light grey background for the body */
 }
 
-.profile-container {
+.hero-section {
     display: flex;
-    align-items: center; /* Vertically center the items */
-    justify-content: start; /* Align items to start */
-    gap: 20px; /* Add some space between the image and the text */
+    align-items: center; /* Vertically center the items in the hero section */
+    justify-content: center; /* Center the hero section content horizontally */
+    background-color: #fff; /* White background for the hero section */
+    padding: 50px 10%; /* Add padding on the top and bottom, and 10% from the left and right */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* A subtle shadow to lift the hero section */
 }
 
-.profile-container img {
-    width: 200px; /* Adjust based on your preference */
-    border-radius: 100px;
-}
-
-.profile-info, .profile-text {
-    max-width: 60%; /* Adjust based on your preference */
-}
-
-.profile-text h1, .profile-text h2, h1, h2 {
-    font-family: 'Inconsolata', monospace;
-    color: black;
-}
-
-/* If you're using .profile-image class, ensure it's in your HTML. */
 .profile-image img {
-    width: 200px;
-    height: 200px;
     border-radius: 50%; /* Makes the image circular */
+    width: 250px; /* Set a fixed width for the image */
+    height: 250px; /* Set a fixed height for the image */
     object-fit: cover; /* Ensures the image covers the area without stretching */
+    margin-right: 50px; /* Add space between the image and the profile info */
+}
+
+.profile-info {
+    text-align: left; /* Align the text to the left */
+}
+
+.profile-info h1 {
+    font-size: 2.5rem; /* Large font size for the name */
+    margin-bottom: 0.5rem; /* Space between the name and the subtitle */
+}
+
+.profile-info h2 {
+    font-size: 1.5rem; /* Smaller font size for the subtitle */
+    margin-bottom: 1rem; /* Space between the subtitle and the paragraph */
+}
+
+.profile-info p {
+    font-size: 1rem; /* Regular font size for the paragraph */
+    margin-bottom: 2rem; /* Space between the paragraph and the buttons */
+}
+
+/* Style for the buttons, assuming you want them styled as links */
+.profile-actions a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #000000; /* Teal background for the buttons */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.profile-actions a:hover {
+    background-color: #000000; /* Darker teal background on hover */
+}
+
+.vsco-link {
+    display: flex; /* Aligns the logo and text side by side */
+    align-items: center; /* Centers them vertically */
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Inherits the text color from the parent */
+    margin-top: 10px; /* Adds some space above the link */
+}
+
+.vsco-logo {
+    width: 40px; /* Example size, adjust as needed */
+    height: 40px; /* Maintains the aspect ratio of the logo */
+    margin-right: 10px; /* Adds space between the logo and the text */
 }
 
 .navbar {
@@ -55,6 +93,8 @@ body {
     background-color: #ddd;
     color: black;
 }
+
+'''
 
 a {
     color: black;

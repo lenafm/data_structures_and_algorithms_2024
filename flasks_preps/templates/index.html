@@ -1,15 +1,21 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <div class="profile-container">
-        <img src="{{ url_for('static', filename='Elena_funny.JPG') }}" alt="A photo of you">
-        <div class="profile-info">
-            <h1>Elena Dreyer</h1>
-            <h2>A Brief Description of You</h2>
-            <p>A paragraph about you...</p>
+<div class="hero-section">
+    <div class="profile-image">
+        <img src="{{url_for('static', filename='Elena_funny.JPG')}}" alt="Elena Dreyer">
+    </div>
+    <div class="profile-content">
+        <h1>I'm Elena Dreyer</h1>
+        <p>bla bla bla</p>
+        <div class="profile-actions">
+            <!-- Other buttons or links can go here -->
+            <a href="https://vsco.co/elenadreyer/gallery" class="vsco-link">
+                <img src="{{url_for('static', filename='vsco-share-image.png')}}" alt="VSCO" class="vsco-logo">
+                <span>Visit my VSCO</span>
+            </a>
+            <!-- Other buttons or links can go here -->
         </div>
     </div>
-    <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
+</div>
 {% endblock %}
-
-
