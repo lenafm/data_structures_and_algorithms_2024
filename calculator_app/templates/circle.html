@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+</head>
+<body>
+<div class="container">
+	<h2 class="mt-5">Circle Operations</h2>
+    <p>Input radius of circle here to find out it's area and perimeter. </p>
+
+    <form action="{{ url_for('circle')}}" method="post">
+        <input type="text" name="radius" placeholder="Enter radius" required="required" />
+
+        <button type="submit">Calculate</button>
+    </form>
+
+   <br>
+
+   {% if printed_result %}
+       <p>For a radius of {{ radius }} the area and perimeter are the following:</p>
+       {% set results = printed_result.split(',') %}
+       {% for result in results %}
+           <strong>{{ result.split(':')[0] }}:</strong> {{ result.split(':')[1] }}<br>
+       {% endfor %}
+   {% endif %}
+
+</div>
+</body>
+</html>
